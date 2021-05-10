@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1440px;
+    font-size: 15px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body, h1, button {
+    color: hsl(0, 0%, 95%);
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    padding: 10% 0; 
+}
+
+p {
+    font-family: 'Lexend Deca', sans-serif;
+    line-height: 1.5em;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+section {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: stretch;
+    max-width: 700px;
+}
+
+.grids {
+    padding: 15%;
+}
+
+.grids a {
+    font-family: 'Lexend Deca', sans-serif;
+    display: inline-block;
+    border-radius: 50px;
+    margin-top: 20%;
+    padding: 8% 15%;
+    text-decoration: none;
+}
+
+.grids a:hover {
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+img {
+    max-width: 50%;
+}
+
+.one {
+    background: hsl(31, 77%, 52%);
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.one a {
+    background: #fff;
+    color: hsl(31, 77%, 52%);
+    border: 1px solid hsl(31, 77%, 52%);
+}
+
+.one a:hover {
+    background: hsl(31, 77%, 52%);
+}
+
+.two {
+    background: hsl(184, 100%, 22%);
+}
+
+.two a {
+    background: #fff;
+    color: hsl(184, 100%, 22%);
+    border: 1px solid hsl(184, 100%, 22%);
+}
+
+.two a:hover {
+    background: hsl(184, 100%, 22%);
+}
+
+.three {
+    background: hsl(179, 100%, 13%);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.three a {
+    background: #fff;
+    color: hsl(179, 100%, 13%);
+    border: 1px solid hsl(179, 100%, 13%);
+}
+
+.three a:hover {
+    background: hsl(179, 100%, 13%);
+}
+
+@media only screen and (max-width: 375px){
+    section {
+        grid-template-columns: auto;
+        max-width: 320px;
+    }
+
+    .one {
+        border-top-right-radius: 8px;
+        border-bottom-left-radius: 0;
+    }
+
+    .three {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 8px;
+    }
+}
